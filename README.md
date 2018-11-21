@@ -2,7 +2,7 @@
 
 ![circlci-badge](https://circleci.com/gh/jami-i/embulk-parser-apache-custom-log.svg?&style=shield&circle-token=7092d38cbe35149872178bbce455dfc9d5bc951b)
 
-kebab-caseをsnake_caseにしたかっただけ
+> kebab-caseをsnake_caseにしたかっただけ
 
 Embulk parser plugin for apache **CustomLog**.
 
