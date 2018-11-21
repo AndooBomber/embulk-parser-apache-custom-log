@@ -23,7 +23,7 @@ public class StringLogElementFactory implements LogElementFactory<StringLogEleme
         if(StringUtils.isEmpty(parameter)){
             return new StringLogElement(name, regexp);
         }else{
-            return new StringLogElement(name + "-" + parameter, regexp);
+            return new StringLogElement(name + "_" + parameter, regexp);
         }
     }
 }
