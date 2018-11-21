@@ -23,7 +23,7 @@ public class LongLogElementFactory implements LogElementFactory<LongLogElement>,
         if(StringUtils.isEmpty(parameter)){
             return new LongLogElement(name, regexp);
         }else {
-            return new LongLogElement(name + "-" + parameter, regexp);
+            return new LongLogElement(name + "_" + parameter, regexp);
         }
 
     }
