@@ -20,43 +20,43 @@ public class LogFormats implements Patterns {
 
         Map<String, LogElementFactory<? extends LogElement>> mapping = new HashMap<>();
 
-        mapping.put("a", new StringLogElementFactory("remote-ip",     IP_ADDRESS));
-        mapping.put("A", new StringLogElementFactory("local-ip",      IP_ADDRESS));
-        mapping.put("b", new LongLogElementFactory("response-bytes"));
-        mapping.put("B", new LongLogElementFactory("response-bytes"));
-        mapping.put("C", new StringLogElementFactory("request-cookie"));
-        mapping.put("D", new LongLogElementFactory("request-process-time-us"));
+        mapping.put("a", new StringLogElementFactory("remote_ip",     IP_ADDRESS));
+        mapping.put("A", new StringLogElementFactory("local_ip",      IP_ADDRESS));
+        mapping.put("b", new LongLogElementFactory("response_bytes"));
+        mapping.put("B", new LongLogElementFactory("response_bytes"));
+        mapping.put("C", new StringLogElementFactory("request_cookie"));
+        mapping.put("D", new LongLogElementFactory("request_process_time_us"));
         mapping.put("e", new StringLogElementFactory("env"));
-        mapping.put("f", new StringLogElementFactory("file-name"));
-        mapping.put("h", new StringLogElementFactory("remote-host"));
-        mapping.put("H", new StringLogElementFactory("request-protocol", NON_SPACE));
-        mapping.put("i", new StringLogElementFactory("request-header"));
-        mapping.put("l", new StringLogElementFactory("remote-log-name", NON_SPACE));
-        mapping.put("m", new StringLogElementFactory("request-method", METHOD));
+        mapping.put("f", new StringLogElementFactory("file_name"));
+        mapping.put("h", new StringLogElementFactory("remote_host"));
+        mapping.put("H", new StringLogElementFactory("request_protocol", NON_SPACE));
+        mapping.put("i", new StringLogElementFactory("request_header"));
+        mapping.put("l", new StringLogElementFactory("remote_log_name", NON_SPACE));
+        mapping.put("m", new StringLogElementFactory("request_method", METHOD));
 
-        mapping.put("n", new StringLogElementFactory("module-note"));
-        mapping.put("o", new StringLogElementFactory("response-header"));
+        mapping.put("n", new StringLogElementFactory("module_note"));
+        mapping.put("o", new StringLogElementFactory("response_header"));
 
-        mapping.put("p", new LongLogElementFactory("request-port"));
+        mapping.put("p", new LongLogElementFactory("request_port"));
 
-        mapping.put("P", new LongLogElementFactory("request-process"));
+        mapping.put("P", new LongLogElementFactory("request_process"));
 
-        mapping.put("q", new StringLogElementFactory("request-query", QUERY));
+        mapping.put("q", new StringLogElementFactory("request_query", QUERY));
 
-        mapping.put("r", new StringLogElementFactory("request-line"));
-        mapping.put("s", new LongLogElementFactory("response-status", STATUS));
+        mapping.put("r", new StringLogElementFactory("request_line"));
+        mapping.put("s", new LongLogElementFactory("response_status", STATUS));
 
-        mapping.put("t", new TimestampLogElementFactory(task, "request-time"));
+        mapping.put("t", new TimestampLogElementFactory(task, "request_time"));
 
-        mapping.put("T", new LongLogElementFactory("request-process-time-s"));
+        mapping.put("T", new LongLogElementFactory("request_process_time_s"));
 
-        mapping.put("u", new StringLogElementFactory("request-user"));
-        mapping.put("U", new StringLogElementFactory("request-path", PATH));
-        mapping.put("v", new StringLogElementFactory("request-server-name", NON_SPACE));
-        mapping.put("V", new StringLogElementFactory("canonical-server-name", NON_SPACE));
-        mapping.put("X", new StringLogElementFactory("connection-status", CONN_STATUS));
-        mapping.put("I", new LongLogElementFactory("request-total-bytes"));
-        mapping.put("O", new LongLogElementFactory("response-total-bytes"));
+        mapping.put("u", new StringLogElementFactory("request_user"));
+        mapping.put("U", new StringLogElementFactory("request_path", PATH));
+        mapping.put("v", new StringLogElementFactory("request_server_name", NON_SPACE));
+        mapping.put("V", new StringLogElementFactory("canonical_server_name", NON_SPACE));
+        mapping.put("X", new StringLogElementFactory("connection_status", CONN_STATUS));
+        mapping.put("I", new LongLogElementFactory("request_total_bytes"));
+        mapping.put("O", new LongLogElementFactory("response_total_bytes"));
 
         mapping.put("%", new StringLogElementFactory("%", "(¥¥%)"));
 
